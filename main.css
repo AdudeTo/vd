@@ -1,0 +1,46 @@
+body{
+   /* background-color: #e0e0e0;*/
+    padding: 0;
+    margin: 0;    
+}
+
+header {
+    background-color: #eeeeee;   
+    min-height: 100px;
+}
+
+h1{
+    background-color: #eeeeee;   
+    margin: 0;
+}
+
+nav {
+    min-height: 200px;
+    background-color: black;
+    /*color: white;*/
+}
+
+section, .section {
+    max-width: 1024px;
+    border: solid 1px black;
+    min-height: 150px;
+    margin: 20px auto;
+}
+
+ul li {
+    border-bottom: solid 2px red;
+}
+
+ul li.green{
+    background-color: green;;
+}
+
+ul ol {
+    border-bottom: solid 2px rgb(65, 0, 168);
+}
+
+ul ol:first-child {
+    border-bottom: solid 2px rgb(65, 0, 168);
+    background: black;
+    color: white;
+}
