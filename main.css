@@ -27,6 +27,9 @@ section, .section {
     margin: 20px auto;
 }
 
+
+
+
 ul li {
     border-bottom: solid 2px red;
 }
@@ -43,4 +46,44 @@ ul ol:first-child {
     border-bottom: solid 2px rgb(65, 0, 168);
     background: black;
     color: white;
+}
+
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.section figure{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.section figure figcaption{
+    background-color: black;
+    color: #fff;
+    height: 40px;
+}
+
+.section figure img {
+    width: 100%;
+}
+
+.flexContainer{
+display: flex;
+flex-wrap:wrap;
+gap: 5px;
+justify-content: space-between;    
+}
+
+.flexContainer figure {
+    display: block;    
+    width: unset !important;   
+    
+}
+
+.flexContainer figure img {   
+    width: unset !important;
+    max-height: 200px;
 }
