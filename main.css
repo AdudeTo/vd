@@ -94,10 +94,72 @@ justify-content: space-between;
         background-repeat: no-repeat; 
         background-position: right top; 
     background-size: cover;
-    transition: 0.5s;
+    transition: 10.5s;
 }
 
 .prBG div:hover{   
     background-position: left bottom; 
-    transition: 0.5s;
+    transition: 10.5s;
+}
+
+
+
+.submitForm form input[type="text"] {
+    height: 40px;
+    font-size: 25px;
+    border: 4px rgba(0, 0, 255, 0) solid;
+    outline-style: double;   
+
+}
+
+
+.test::before{
+    content: "before sudo";
+
+}
+
+
+
+.test::after{
+    content: "after sudo";
+
+}
+
+.flyingDiv{
+    width: 300px;
+    height: 300px;
+    background-color: #27bd9879;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    z-index: 50;
+}
+
+.flyingDiv2{
+    width: 300px;
+    height: 300px;
+    background-color: #bd2763;
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    z-index: 10;
+}
+
+.flyingDiv3{
+    width: 300px;
+    min-height: 300px;
+    background-color: #ebf69e;
+    position: relative;
+
+}
+
+
+.flyingDiv3 .flyingDiv4{
+    width: 100px;
+    height: 400px;
+    background-color: #3327bd;
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    z-index: 10;
 }
