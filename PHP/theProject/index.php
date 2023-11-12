@@ -23,7 +23,7 @@ error_reporting(E_ALL);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $tmpFile = $_FILES['pic']['tmp_name'];
-    $newFile = 'new_location/to/file/'.$_FILES['pic']['name'];
+    $newFile = '/new_location/to/file/'.$_FILES['pic']['name'];
     $result = move_uploaded_file($tmpFile, $newFile);
     echo $_FILES['pic']['name'];
     if ($result) {

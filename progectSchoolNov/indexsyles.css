@@ -1,0 +1,270 @@
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20211011/pngtree-modern-liquid-gradient-colors-abstract-background-design-template-for-brochures-flyers-image_910976.png);
+  background-size: 100%;
+   width: 100%;
+   z-index: -100;
+   height: fit-content;
+  background-repeat: no-repeat;
+   
+}
+
+
+
+.header h1 {
+    font-family: Arial;
+  font-size: 50px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #4cb36c;
+  overflow: auto;
+  display: inline-block;
+ position: relative;
+ z-index: 5;
+ position: sticky;
+}
+
+@media only screen and (max-width: 700px) {
+
+.UpF{
+    background:url(./images/but.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+   
+    }
+}
+.navbar a {
+  float: left;
+padding: 50px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; 
+  text-align: center; 
+}
+
+.navbar a:hover {
+  background-color: #3c8e55;
+}
+
+
+.navbar a.active {
+  background-color: #194025;
+}
+
+
+
+
+
+body {
+  font-family: Arial;
+  background-color: #626262;
+  background-size: 100%;
+  
+}
+/*  */
+
+
+
+div.gallery:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.gallery img {
+ height: 200px;
+  width: 100%;
+ position: relative;
+ object-fit: contain;
+ z-index:305 ;
+  
+}
+div.gallery img:hover {
+
+  transform: scale(1.6);
+  
+}
+
+div.desc {
+  padding: 15px;
+  color: whitesmoke;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
+  
+}
+div.desc:hover {
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 30px 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .responsive {
+    padding: 15px 6px;
+    width: 50%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+  border: 0; 
+  height: 100%; 
+  margin: 0;
+   padding: 0; 
+   width: 100%;
+
+}
+@media only screen and (max-width: 585px) {
+.container {
+  position: absolute;
+  width: 50%;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+.Fixbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+ 
+}
+
+
+.container img {
+  
+  max-width: 10%;
+  max-height: 10% ;
+  
+  border-radius: 50%;
+  z-index: 30;
+  
+}
+.container .btn:hover {
+background-color: rgba(0, 0, 0, 0.119);
+
+
+}
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 5% 5%;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  height: 100%;
+  width: 1%; 
+  background:none;
+  z-index: 300;
+  
+}
+
+
+.container {
+  position: absolute;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19.7%;
+  
+}
+@media only screen and (max-width: 912px)  {
+  .container {
+    margin-top: 100%;
+    
+  }
+
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 36%;
+  border: 3px solid #f1f1f1;
+  z-index: 310;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+ 
+  z-index: 310;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
