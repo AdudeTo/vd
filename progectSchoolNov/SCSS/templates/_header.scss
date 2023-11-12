@@ -1,0 +1,19 @@
+
+
+
+header {    
+    height: 33vh;
+    text-align: center;
+    background-image: url(assets/images/header.jpg);
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: var(--h1Fsize);
+    }
+
+
+}
+

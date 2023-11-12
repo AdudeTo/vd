@@ -1,0 +1,22 @@
+:root {  
+    --gap: #{$gap};
+    --spacer: #{$spacer};
+    --generalFont: #{$generalFont};     
+    --h1Fsize: #{$h1MobileFontSize}; 
+}
+
+@media screen and (min-width: $mobile) {
+    :root { 
+        --gap: calc(#{$gap} * 2);
+        --h1Fsize: #{$h1TabletFontSize};  
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    :root {
+        --gap: calc(#{$gap} * 3); 
+        --h1Fsize: #{$h1DesktopFontSize};  
+    }
+} 
+
+
