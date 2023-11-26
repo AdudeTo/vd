@@ -61,18 +61,49 @@ p:last-child {
     --h1Fsize: 36px;
   }
 }
-header {
-  height: 33vh;
-  text-align: center;
-  background-image: url(assets/images/header.jpg);
-  background-position: top center;
-  background-size: cover;
+#overlayContainer {
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8274509804);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  display: none;
+}
+#overlayContainer .overlay {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+#overlayContainer .overlay .formContainer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header h1 {
-  font-size: var(--h1Fsize);
+#overlayContainer .overlay .formContainer .formHolder {
+  min-width: 350px;
+  min-height: 250px;
+  background: black;
+}
+#overlayContainer .overlay .closeButton {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  color: black;
+  border: solid 2px gray;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 nav {
@@ -80,6 +111,7 @@ nav {
   position: sticky;
   top: 0px;
   margin-bottom: 40px;
+  background-color: red;
 }
 nav ul {
   display: flex;
@@ -100,4 +132,18 @@ nav .uploads button {
   height: 65px;
   width: 65px;
   margin: auto;
+}
+
+header {
+  height: 33vh;
+  text-align: center;
+  background-image: url(assets/images/header.jpg);
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: var(--h1Fsize);
 }/*# sourceMappingURL=main.css.map */

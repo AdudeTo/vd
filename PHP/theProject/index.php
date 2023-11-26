@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 <form action="" enctype="multipart/form-data" method="POST">
 <input type="file" name="pic" />
-<input type="submit" value="Upload" />
+<input type="submit" value="Upload" /> 
 </form>
     
 </body>
