@@ -80,7 +80,7 @@ p:last-child {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: red;
+  background: rgba(255, 255, 255, 0.678);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +88,12 @@ p:last-child {
 #overlayContainer .overlay .formContainer .formHolder {
   min-width: 350px;
   min-height: 250px;
-  background: black;
+  background: rgb(86, 86, 86);
+  padding: 10px;
+  border-radius: 5px;
+}
+#overlayContainer .overlay .formContainer .formHolder input {
+  margin-bottom: 10px;
 }
 #overlayContainer .overlay .closeButton {
   width: 60px;
@@ -107,11 +112,11 @@ p:last-child {
 }
 
 nav {
-  height: 120px;
+  height: 60px;
   position: sticky;
   top: 0px;
   margin-bottom: 40px;
-  background-color: red;
+  background-color: rgb(66, 123, 0);
 }
 nav ul {
   display: flex;
@@ -123,15 +128,19 @@ nav ul li {
 nav .uploads {
   position: absolute;
   width: 100%;
-  height: 65px;
+  height: 80px;
   margin: auto;
   bottom: -30px;
 }
 nav .uploads button {
   display: block;
-  height: 65px;
-  width: 65px;
+  height: 80px;
+  width: 80px;
   margin: auto;
+  background: url(assets/images/upload_b.webp) top center no-repeat;
+  background-size: 80px auto;
+  border: none;
+  cursor: pointer;
 }
 
 header {
@@ -146,4 +155,33 @@ header {
 }
 header h1 {
   font-size: var(--h1Fsize);
+  color: black;
+}
+
+main section ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section ul li {
+  display: inline-block;
+  width: calc(25% - 10px);
+  padding: 5px;
+}
+main section ul li article {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section ul li article h3 {
+  width: 100%;
+}
+main section ul li article figure {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 300px;
+  max-height: 300px;
+}
+main section ul li article figure img {
+  height: auto;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
